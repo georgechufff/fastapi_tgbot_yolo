@@ -12,3 +12,4 @@ pytorch_lightning
 torchvision
 timm
 ultralytics~=8.0.196
+dotenv

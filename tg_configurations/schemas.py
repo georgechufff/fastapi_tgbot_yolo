@@ -105,11 +105,11 @@ class ReplayMessage(BaseModel):
     forward_date: int = None
     entities: list = None
     caption_entities: list = None
-    media_group_id: int = None # если это группа фотографий, приходят они двумя разными запросами, но это айди один.
-    animation: Animation = None # если это гифка пришла, как документ но с указанием анимации
-    location: Location = None # обработка локации в сообщении, обычно больше ничего и нет, но всё возможно
-    audio: Audio = None # обработка песен
-    voice: Voice = None # обработка голосового сообщения
+    media_group_id: int = None
+    animation: Animation = None
+    location: Location = None
+    audio: Audio = None
+    voice: Voice = None
 
 
 class Message(BaseModel):
@@ -122,16 +122,16 @@ class Message(BaseModel):
     document: Document = None
     video: Video = None
     caption: str = None
-    sticker: dict = None # возможно и не нужно
+    sticker: dict = None
     forward_from: FromF = None
     forward_date: int = None
     entities: list = None
     caption_entities: list = None
-    media_group_id: int = None # если это группа фотографий, приходят они двумя разными запросами, но это айди один.
-    animation: Animation = None # если это гифка пришла, как документ но с указанием анимации
-    location: Location = None # обработка локации в сообщении, обычно больше ничего и нет, но всё возможно
-    audio: Audio = None # обработка песен
-    voice: Voice = None # обработка голосового сообщения
+    media_group_id: int = None
+    animation: Animation = None
+    location: Location = None
+    audio: Audio = None
+    voice: Voice = None
     reply_to_message: ReplayMessage = None
 
 
